@@ -1,0 +1,225 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    background: #111;
+    color: white;
+
+    font-family: Arial, sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 95%;
+    max-width: 900px;
+    text-align: center;
+}
+
+.hidden {
+    display: none !important;
+}
+
+h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.subtitle {
+    color: #aaa;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.instructions {
+    background: #1e1e1e;
+    border-radius: 18px;
+
+    padding: 20px;
+    margin: 20px auto 30px;
+
+    max-width: 400px;
+}
+
+.instructions p {
+    font-size: 18px;
+    margin: 12px;
+}
+
+button {
+    border: none;
+
+    padding: 15px 30px;
+
+    border-radius: 12px;
+
+    background: white;
+    color: #111;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+.cameraBox {
+    position: relative;
+
+    width: 100%;
+
+    margin: 20px auto;
+
+    background: black;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+}
+
+video {
+    width: 100%;
+    display: block;
+
+    transform: scaleX(-1);
+}
+
+#cameraStatus {
+    position: absolute;
+
+    top: 15px;
+    left: 15px;
+
+    background: rgba(0,0,0,0.7);
+
+    padding: 10px 15px;
+
+    border-radius: 10px;
+}
+
+#status {
+    font-size: 20px;
+    margin: 15px;
+}
+
+#countdown {
+    height: 70px;
+
+    font-size: 60px;
+    font-weight: bold;
+}
+
+#timer {
+    font-size: 80px;
+    font-weight: bold;
+
+    margin: 10px;
+}
+
+.personStatus {
+    display: flex;
+    justify-content: center;
+
+    gap: 20px;
+
+    margin: 20px;
+
+    flex-wrap: wrap;
+}
+
+.personStatus div {
+    background: #1e1e1e;
+
+    padding: 12px 20px;
+
+    border-radius: 12px;
+
+    min-width: 180px;
+}
+
+#stopBtn {
+    margin-top: 10px;
+}
+
+#finalTime {
+    font-size: 60px;
+    font-weight: bold;
+
+    margin: 20px;
+}
+
+#rank {
+    font-size: 30px;
+
+    margin: 20px;
+}
+
+#funnyMessage {
+    color: #aaa;
+
+    font-size: 20px;
+
+    margin-bottom: 30px;
+}
+
+.stats {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 20px;
+
+    margin: 30px 0;
+
+    flex-wrap: wrap;
+}
+
+.stats div {
+    background: #1e1e1e;
+
+    padding: 20px;
+
+    border-radius: 15px;
+
+    min-width: 150px;
+}
+
+.stats span {
+    font-size: 30px;
+}
+
+.stats p {
+    color: #aaa;
+
+    margin: 8px;
+}
+
+.stats strong {
+    font-size: 22px;
+}
+
+@media (max-width: 600px) {
+
+    h1 {
+        font-size: 30px;
+    }
+
+    #timer {
+        font-size: 55px;
+    }
+
+    #finalTime {
+        font-size: 45px;
+    }
+}

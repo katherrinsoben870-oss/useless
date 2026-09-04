@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Awkward Eye Contact Timer 👀</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- START -->
+    <section id="startScreen">
+
+        <h1>Awkward Eye Contact Timer 👀</h1>
+
+        <p class="subtitle">
+            Stare at each other. Regret everything.
+        </p>
+
+        <div class="instructions">
+            <p>👥 Two people</p>
+            <p>📷 One camera</p>
+            <p>👀 Don't look away</p>
+            <p>😳 Try not to blink... just kidding!</p>
+        </div>
+
+        <button id="startBtn">
+            Start Game 👀
+        </button>
+
+    </section>
+
+
+    <!-- GAME -->
+    <section id="gameScreen" class="hidden">
+
+        <h1>👀 DON'T LOOK AWAY</h1>
+
+        <div class="cameraBox">
+
+            <video id="video" autoplay playsinline></video>
+
+            <div id="cameraStatus">
+                Starting camera...
+            </div>
+
+        </div>
+
+        <div id="status">
+            👥 Waiting for two people...
+        </div>
+
+        <div id="countdown"></div>
+
+        <div id="timer">
+            0.00
+        </div>
+
+        <div class="personStatus">
+
+            <div id="person1">
+                Person 1: ⏳
+            </div>
+
+            <div id="person2">
+                Person 2: ⏳
+            </div>
+
+        </div>
+
+        <button id="stopBtn">
+            I'm Done 😭
+        </button>
+
+    </section>
+
+
+    <!-- RESULT -->
+    <section id="resultScreen" class="hidden">
+
+        <h1>💀 GAME OVER</h1>
+
+        <p>Your awkward eye contact lasted:</p>
+
+        <div id="finalTime">
+            0.00 seconds
+        </div>
+
+        <div id="rank">
+            😐 Awkward Beginner
+        </div>
+
+        <p id="funnyMessage"></p>
+
+        <div class="stats">
+
+            <div>
+                <span>🏆</span>
+                <p>Best Time</p>
+                <strong id="bestTime">0.00s</strong>
+            </div>
+
+            <div>
+                <span>😳</span>
+                <p>Awkwardness</p>
+                <strong id="awkwardness">0%</strong>
+            </div>
+
+            <div>
+                <span>🎮</span>
+                <p>Attempts</p>
+                <strong id="attempts">0</strong>
+            </div>
+
+        </div>
+
+        <button id="againBtn">
+            Try Again 👀
+        </button>
+
+    </section>
+
+</div>
+
+
+<!-- MediaPipe -->
+<script type="module" src="script.js"></script>
+
+</body>
+</html>
